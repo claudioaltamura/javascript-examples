@@ -1,0 +1,22 @@
+{
+  "name": "javascript-examples",
+  "version": "1.0.0",
+  "description": "javascript examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudioaltamura/javascript-examples.git"
+  },
+  "author": "Claudio Altamura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudioaltamura/javascript-examples/issues"
+  },
+  "homepage": "https://github.com/claudioaltamura/javascript-examples#readme",
+  "dependencies": {
+    "jest": "^27.0.4"
+  }
+}

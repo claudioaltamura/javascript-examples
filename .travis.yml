@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+dist: trusty
+sudo: required
+branches:
+  only:
+  - master
+script:
+  - npm run test-headless
