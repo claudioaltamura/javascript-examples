@@ -18,5 +18,12 @@
   "homepage": "https://github.com/claudioaltamura/javascript-examples#readme",
   "dependencies": {
     "jest": "^27.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "babel-jest": "^27.2.1",
+    "ts-node": "^10.2.1"
   }
 }
