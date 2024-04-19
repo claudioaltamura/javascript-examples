@@ -9,5 +9,4 @@ run Jest directly
 
     yarn global add jest
 
-
     jest sum
