@@ -12,7 +12,16 @@ class Endpoint {
 
 module.exports = {
     extractEndpoints: (filePath) => {
-        const jsonData = fs.readFileSync(filePath, 'utf8');
+        let jsonData;
+        try {
+            jsonData = fs.readFileSync(filePath, 'utf8');
+        } catch (error) {
+            if (error.code === 'ENOENT') {
+                throw new Error('File not found');
+              } else {
+                throw new Error(`Error reading file: '${error}'`);
+              }
+        }
         const paths = JSONPath({path: 'paths', json: JSON.parse(jsonData)});
         const endpoints = [];
         Object.entries(paths[0]).forEach(([key, value]) => {
